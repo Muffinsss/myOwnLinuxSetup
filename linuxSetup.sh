@@ -1,5 +1,4 @@
 #Update Debian Operating System
-
 apt-get update -q -y
 apt-get upgrade -q -y
 apt-get dist-upgrade -q -y
@@ -10,7 +9,6 @@ apt-get -q -y install xorg lxde-core tightvncserver
 echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
 
 #Install Java 8 
-
 apt-get install software-properties-common
 add-apt-repository "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main"
 sudo apt-get update 2>&1 1>/dev/null | sed -ne 's/.*NO_PUBKEY //p' |
@@ -21,13 +19,11 @@ done
 apt-get install -q -y oracle-java8-installer
 
 #Dreambot Stuff
-
 mkdir ~/Desktop/
 curl -o ~/Desktop/DBLauncher.jar https://dreambot.org/DBlauncher.jar
 chmod +x ~/Desktop/DBLauncher.jar
 
 #Install Chromium
-#install chromium
 apt-get install chromium
 
 #Asks for pw here
