@@ -1,10 +1,14 @@
 #Update Debian Operating System
 apt-get update -q -y
+
+#install dbus
+dpkg --configure -a
+apt-get install dbus
+
+#Upgrade again
 apt-get upgrade -q -y
 apt-get dist-upgrade -q -y
 
-#install dbus
-apt-get install dbus
 
 # Install X & LXDE & VNC
 apt-get -q -y install xorg lxde-core tightvncserver
