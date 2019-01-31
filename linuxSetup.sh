@@ -22,7 +22,7 @@ while read key; do
     echo 'Processing key:' "$key"
     sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys "$key"
 done
-apt-get -q -y install -q -y oracle-java8-installer
+apt-get -q -y install oracle-java8-installer --allow-unauthenticated
 
 #Dreambot Stuff
 mkdir ~/Desktop/
