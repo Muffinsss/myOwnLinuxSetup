@@ -26,7 +26,7 @@ apt-get -q -y install oracle-java8-installer --allow-unauthenticated
 
 #Dreambot Stuff
 mkdir ~/Desktop/
-curl -o ~/Desktop/DBLauncher.jar https://dreambot.org/DBlauncher.jar
+curl -o ~/Desktop/DBLauncher.jar https://dreambot.org/DBLauncher.jar
 chmod 777 ~/Desktop/DBLauncher.jar
 
 #Install Chromium
