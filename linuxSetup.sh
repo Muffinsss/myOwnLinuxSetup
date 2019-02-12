@@ -24,10 +24,10 @@ while read key; do
 done
 apt-get -q -y install oracle-java8-installer --allow-unauthenticated
 
-#Dreambot Stuff
+
 mkdir ~/Desktop/
-curl -o ~/Desktop/DBLauncher.jar https://dreambot.org/DBLauncher.jar
-chmod 777 ~/Desktop/DBLauncher.jar
+curl -o ~/Desktop/OSBot.jar https://osbot.org/mvc/get
+chmod 777 ~/Desktop/OSBot.jar
 
 #Install Chromium
 apt-get -q -y install chromium
