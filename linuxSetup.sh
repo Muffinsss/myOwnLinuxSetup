@@ -10,7 +10,7 @@ apt-get dist-upgrade -q -y
 
 
 # Install X & LXDE & VNC
-apt-get -q -y install xorg lxde-core tightvncserver
+apt-get -q -y install xfce4 xfce4-goodies tightvncserver
 
 echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
 
